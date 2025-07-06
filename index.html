@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>FarmConnect</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="login-section">
+    <h1>Welcome to FarmConnect</h1>
+    <button onclick="selectRole('farmer')">I'm a Farmer</button>
+    <button onclick="selectRole('consumer')">I'm a Consumer</button>
+  </div>
+
+  <div id="farmer-form" class="hidden">
+    <h2>Farmer Profile</h2>
+    <input type="text" placeholder="Name">
+    <input type="file" accept="image/*">
+    <input type="number" placeholder="Price">
+    <input type="text" placeholder="Payment Details">
+  </div>
+
+  <div id="consumer-form" class="hidden">
+    <h2>Product Search</h2>
+    <input type="text" placeholder="Search product">
+    <button>View Products</button>
+    <button>Choose Payment</button>
+    <input type="text" placeholder="Delivery Address">
+    <button>Confirm Order</button>
+    <textarea placeholder="Feedback"></textarea>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
